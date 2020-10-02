@@ -5,5 +5,6 @@ Crafty.c("Hamster", {
         this.y = 0;
         this.w = 100;
         this.h = 100;
+        this.gravity("solid");
     }
 })
