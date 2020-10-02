@@ -1,7 +1,6 @@
 Crafty.defineScene("Game", function() {
-	
-	var redSquare = Crafty.e('2D, DOM, Color')
-		.attr({x: 0, y: 0, w: 100, h: 100})
-		.color('#F00');
+
+	var player = Crafty.e("Hamster");
+	player.color('red')
 
 });
