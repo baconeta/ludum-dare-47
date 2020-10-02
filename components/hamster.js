@@ -14,3 +14,4 @@ Crafty.c("Hamster", {
          	this.w - (this.w/6), this.h - 10,
          	0 + (this.w/6), this.h - 10
         ]);
+    }
