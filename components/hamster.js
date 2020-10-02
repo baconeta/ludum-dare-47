@@ -1,12 +1,13 @@
 Crafty.c("Hamster", {
 	init: function() {
-        this.addComponent("2D, DOM, Color, Delay, Image, Keyboard,  SpriteAnimation, Gravity, Collision, player");
-        this.x = 0;
+        this.addComponent("2D, DOM, Color, Delay, Image, Keyboard,  SpriteAnimation, Gravity, Collision, player, WiredHitBox");
+        this.x = 50;
         this.y = 0;
         this.w = 100;
         this.h = 100;
         this.origin("center")
         this.gravity("solid");
+        this.debugStroke('black')
         this.bind('KeyDown', function(e) {
 		    if(e.key == Crafty.keys.LEFT_ARROW) {
 		      this.ax += -4;

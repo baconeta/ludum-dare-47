@@ -1,11 +1,12 @@
-Crafty.c("simple_platform", {
+Crafty.c("Simple_Platform", {
 	init: function() {
-        this.addComponent("2D, DOM, Color, Image, solid, Collision");
-        this.rotation = 15;
-        this.color('green');
+        this.addComponent("2D, DOM, Color, WiredHitBox");
         this.x = -300;
-        this.y = 150;
+        this.y = 250;
         this.w = 1500;
         this.h = 10;
+        this.rotation = 15;
+        this.color('green');
+        this.debugStroke('blue')
     }
 })
