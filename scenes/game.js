@@ -5,8 +5,8 @@ Crafty.defineScene("Game", function() {
 	player.attach(wheel);
 	var hamster = Crafty.e("Hamster");
 	player.attach(hamster)
-	hamster.x = 60;
-	hamster.y = 120
+	hamster.x = 35;
+	hamster.y = 90
 
 	var simp_pf1 = Crafty.e("Simple_Platform");
 });

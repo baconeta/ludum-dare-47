@@ -5,7 +5,7 @@ Crafty.c("Simple_Platform", {
         this.y = 250;
         this.w = 1500;
         this.h = 10;
-        this.rotation = 15;
+        //this.rotation = 15;
         this.color('green');
         this.debugStroke('black');
     }
