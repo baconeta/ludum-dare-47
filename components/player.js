@@ -10,6 +10,7 @@ Crafty.c("Player", {
             matter : {
                 friction : 0,
                 density : 0.5,
+                shape: 'circle',
                 label : 'player'
             }
         });
