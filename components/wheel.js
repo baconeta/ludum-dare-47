@@ -8,7 +8,10 @@ Crafty.c("Wheel", {
         this.bind('KeyDown', function(e) {
 		    if(e.key == Crafty.keys.LEFT_ARROW) {
 		      	this.rotation += -10;
+
 		    } else if (e.key == Crafty.keys.RIGHT_ARROW) {
+
+
 		      	this.rotation += 10;
 		  	}
     	});

@@ -16,14 +16,9 @@ Crafty.c("Player", {
         });
         this.bind('KeyDown', function(e) {
 		    if(e.key == Crafty.keys.LEFT_ARROW) {
-		    	this.ax += -4;
+				Matter.Body.applyForce(this._body, {x: this.x+10, y: this.y}, {x: -30, y: 0});
 		    } else if (e.key == Crafty.keys.RIGHT_ARROW) {
-		    	this.ax += 4;
-		    } else if (e.key == Crafty.keys.UP_ARROW) {
-		    	this.ay += -4;
-		    } else if (e.key == Crafty.keys.DOWN_ARROW) {
-		    	this.ay += 4;
-		    }
+				Matter.Body.applyForce(this._body, {x: this.x-10, y: this.y}, {x: 30, y: 0});		    }
     	})
     }
 })
