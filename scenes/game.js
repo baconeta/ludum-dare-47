@@ -1,7 +1,7 @@
 Crafty.defineScene("Game", function() {
 
   Crafty.Matter.init({
-    debug : true,
+    // debug : true,
     gravity : {
       x : 0,
       y : 0.098
@@ -16,12 +16,12 @@ Crafty.defineScene("Game", function() {
 	hamster.x = 35;
 	hamster.y = 90
 
-	var simp_pf1 = Crafty.e("Simple_Platform");
-	var simp_pf2 = Crafty.e("Simple_Platform");
-	var simp_pf3 = Crafty.e("Simple_Platform");
-	simp_pf2.rotation = 5;
-	simp_pf3.rotation = -5;
-	simp_pf3.x += 30;
+	var simp_pf1 = Crafty.e("Simple_Platform").place(300,300);
+	// var simp_pf2 = Crafty.e("Simple_Platform");
+	// var simp_pf3 = Crafty.e("Simple_Platform");
+	// simp_pf2.rotation = 5;
+	// simp_pf3.rotation = -5;
+	// simp_pf3.x += 30;
 
 	// var simp_pf4 = Crafty.e("Simple_Platform");
 	// simp_pf4.y -= 200;

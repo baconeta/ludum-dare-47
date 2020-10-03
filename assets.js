@@ -14,6 +14,11 @@ var gameAssets = {
            "tile" : 88,
            "tileh": 59,
            "map": {"hamster_left": [0, 0]}
+       },
+       "assets/images/ground.png": {
+           "tile" : 349,
+           "tileh": 122,
+           "map": {"ground": [0, 0]}
        }
    }
 }
