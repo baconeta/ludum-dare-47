@@ -18,5 +18,4 @@ Crafty.defineScene("Game", function() {
 	hamster.y = 90
 
 	var simp_pf1 = Crafty.e("Simple_Platform");
-	simp_pf1.color('green')
 });

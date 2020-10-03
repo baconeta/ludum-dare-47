@@ -4,8 +4,6 @@ Crafty.c("Hamster", {
         this.x = 0;
         this.y = 0;
         this.origin("center")
-        this.color("rgba(0, 255, 0, 0.2)");
-        this.gravity("solid");
         this.bind('KeyDown', function(e) {
           if(e.key == Crafty.keys.LEFT_ARROW) {
             this.ax += -4;
