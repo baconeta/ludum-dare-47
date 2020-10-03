@@ -20,5 +20,8 @@ Crafty.c("Player", {
 		    } else if (e.key == Crafty.keys.RIGHT_ARROW) {
 				Matter.Body.applyForce(this._body, {x: this.x-10, y: this.y}, {x: 30, y: 0});		    }
     	})
+        this.bind('EnterFrame', function(e) {
+            Crafty.trigger("PlayerVelocity", this._body.velocity);
+        });
     }
 })
