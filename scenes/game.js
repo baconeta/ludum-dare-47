@@ -9,7 +9,6 @@ Crafty.defineScene("Game", function() {
 	pet.x = 25;
 	pet.y = 60;
 
-	var simp_pf1 = Crafty.e("simple_platform");
+	var simp_pf1 = Crafty.e("Simple_Platform");
 	simp_pf1.color('green')
-
 });
