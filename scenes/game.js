@@ -28,6 +28,8 @@ Crafty.defineScene("Game", function() {
 	// simp_pf3.rotation = -5;
 	// simp_pf3.x += 30;
 
+    var tunnel1 = Crafty.e("Tunnel").place(200,100);
+
 
 	player.x = 400;
 	player.y = 0;

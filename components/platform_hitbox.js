@@ -1,7 +1,7 @@
 Crafty.c("Platform_Hitbox", {
 	init: function() {
         this.addComponent("2D, DOM, Matter");
-        this.attr({  // for the moment it requires of all the four pos parameters
+        this.attr({
             x : 0,
             y : 0,
             w : 349,
