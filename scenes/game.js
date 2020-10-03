@@ -19,9 +19,9 @@ Crafty.defineScene("Game", function() {
 	var simp_pf1 = Crafty.e("Simple_Platform").place(400,300);
 	var simp_pf1 = Crafty.e("Simple_Platform").place(600,300);
 	var simp_pf1 = Crafty.e("Simple_Platform").place(800,300);
-	var simp_pf1 = Crafty.e("Simple_Platform").place(1400,500);
-	var simp_pf1 = Crafty.e("Simple_Platform").place(1600,500);
-	var simp_pf1 = Crafty.e("Ramp_Platform").place(1800,500).angle(-15);
+	var simp_pf1 = Crafty.e("Ramp_Platform").place(1000,300).angle(-25);
+	var simp_pf1 = Crafty.e("Simple_Platform").place(2000,150);
+	var simp_pf1 = Crafty.e("Simple_Platform").place(2200,150);
 	// var simp_pf2 = Crafty.e("Simple_Platform");
 	// var simp_pf3 = Crafty.e("Simple_Platform");
 	// simp_pf2.rotation = 5;
