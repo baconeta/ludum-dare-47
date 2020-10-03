@@ -30,5 +30,10 @@ var gameAssets = {
            "tileh": 206,
            "map": {"tunnel_back": [0, 0]}
        },
+       "assets/images/platform.png": {
+           "tile" : 349,
+           "tileh": 122,
+           "map": {"platform": [0, 0]}
+       }
    }
 }
