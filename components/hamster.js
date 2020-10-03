@@ -1,6 +1,6 @@
 Crafty.c("Hamster", {
 	init: function() {
-        this.addComponent("2D, DOM, Color, Keyboard, Collision, Gravity");
+        this.addComponent("2D, DOM, Color, Keyboard, Collision, Gravity, Matter");
         this.x = 0;
         this.y = 0;
         this.w = 100;
@@ -19,5 +19,8 @@ Crafty.c("Hamster", {
 		    	this.ay += 4;
 		    }
     	});
+        this.matter = {
+            
+        }
     }
 })	
