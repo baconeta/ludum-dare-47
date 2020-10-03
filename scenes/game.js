@@ -9,7 +9,7 @@ Crafty.defineScene("Game", function() {
   });
   
 	var player = Crafty.e("Player");
-  
+
 	var wheel = Crafty.e("Wheel");
 	player.attach(wheel);
 	var hamster = Crafty.e("Hamster");
