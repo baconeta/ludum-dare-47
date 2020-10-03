@@ -9,15 +9,20 @@ Crafty.c("Tunnel", {
         this.attach(this.tunnel_front);
         this.tunnel_back = Crafty.e("Tunnel_Back");
         this.attach(this.tunnel_back);
+    },
+    place: function(x, y) {
+        this.x = x;
+        this.y = y;
+        return this;
     }
 });
 Crafty.c("Tunnel_Top_Hitbox", {
 	init: function() {
         this.addComponent("2D, DOM, Matter");
         this.attr({
-            x : 0,
+            x : 20,
             y : 0,
-            w : 206,
+            w : 190,
             h : 5,
             z : 2,
             matter : {
@@ -33,9 +38,9 @@ Crafty.c("Tunnel_Bottom_Hitbox", {
 	init: function() {
         this.addComponent("2D, DOM, Matter");
         this.attr({
-            x : 0,
-            y : 0,
-            w : 206,
+            x : 20,
+            y : 205,
+            w : 190,
             h : 5,
             z : 2,
             matter : {
@@ -50,12 +55,14 @@ Crafty.c("Tunnel_Bottom_Hitbox", {
 Crafty.c("Tunnel_Front", {
 	init: function() {
         this.addComponent("2D, DOM, tunnel_front");
-        this.z = -20;
+        this.z = 20;
+        this.x = 20;
     }
 })
 Crafty.c("Tunnel_Back", {
 	init: function() {
         this.addComponent("2D, DOM, tunnel_back");
-        this.z = 20;
+        this.z = -20;
+        this.x = 0
     }
 });
