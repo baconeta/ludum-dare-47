@@ -1,11 +1,8 @@
 Crafty.c("Wheel", {
 	init: function() {
-        this.addComponent("2D, DOM, Color, Image, Keyboard, SpriteAnimation");
+        this.addComponent("2D, DOM, Keyboard, SpriteAnimation, wheel");
         this.x = 0;
         this.y = 0;
-        this.w = 100;
-        this.h = 100;
-        this.color("red")
         this.origin("center")
 
         this.bind('KeyDown', function(e) {
