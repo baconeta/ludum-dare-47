@@ -1,5 +1,4 @@
 Crafty.defineScene("Loading", function() {
-    Crafty.background("#AAA");
     Crafty.e("2D, DOM, Text")
           .attr({ w: 200, h: 50, x: 300, y: 280 })
           .text("Loading...")

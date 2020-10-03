@@ -17,9 +17,18 @@ Crafty.defineScene("Game", function() {
 	hamster.y = 90
 
 	var simp_pf1 = Crafty.e("Simple_Platform");
+	var simp_pf2 = Crafty.e("Simple_Platform");
+	var simp_pf3 = Crafty.e("Simple_Platform");
+	simp_pf2.rotation = 5;
+	simp_pf3.rotation = -5;
+	simp_pf3.x += 30;
+
+	// var simp_pf4 = Crafty.e("Simple_Platform");
+	// simp_pf4.y -= 200;
+	// simp_pf4.w = 100;
 
 	player.x = 400;
-	// simp_pf1.rotation = -25;
+	player.y = 0;
     makeCameraTrackEntity(player, 75);
         // Matter.Body.setVelocity( player._body, {x : 5, y : 5 });
 });
