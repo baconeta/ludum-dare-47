@@ -18,4 +18,6 @@ Crafty.defineScene("Game", function() {
 	hamster.y = 90
 
 	var simp_pf1 = Crafty.e("Simple_Platform");
+
+        // Matter.Body.setVelocity( player._body, {x : 5, y : 5 });
 });

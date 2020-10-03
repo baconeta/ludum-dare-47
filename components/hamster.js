@@ -18,9 +18,6 @@ Crafty.c("Hamster", {
           } else if (e.key == Crafty.keys.DOWN_ARROW) {
             this.ay += 4;
           }
-    	  });
-        this.matter = {
-
-        }
+	  });
     }
 })
