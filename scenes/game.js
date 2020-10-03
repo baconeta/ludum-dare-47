@@ -1,7 +1,7 @@
 Crafty.defineScene("Game", function() {
 
   Crafty.Matter.init({
-    debug : true,
+    // debug : true,
     gravity : {
       x : 0,
       y : 0.098
@@ -13,8 +13,8 @@ Crafty.defineScene("Game", function() {
 	var hamster = Crafty.e("Hamster");
     player.attach(wheel);
 	player.attach(hamster)
-	hamster.x = 35;
-	hamster.y = 90
+	hamster.x = player.w/2;
+	hamster.y = player.h/2;
 
 	var simp_pf1 = Crafty.e("Simple_Platform").place(400,300);
 	var simp_pf1 = Crafty.e("Simple_Platform").place(600,300);
