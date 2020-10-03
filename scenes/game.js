@@ -19,7 +19,7 @@ Crafty.defineScene("Game", function() {
 	var simp_pf1 = Crafty.e("Simple_Platform").place(400,300);
 	var simp_pf1 = Crafty.e("Simple_Platform").place(600,300);
 	var simp_pf1 = Crafty.e("Simple_Platform").place(800,300);
-	var simp_pf1 = Crafty.e("Ramp_Platform").place(1000,300).angle(-25);
+	var simp_pf1 = Crafty.e("Ramp_Platform").place(1200,300);
 	var simp_pf1 = Crafty.e("Simple_Platform").place(2000,150);
 	var simp_pf1 = Crafty.e("Simple_Platform").place(2200,150);
 	// var simp_pf2 = Crafty.e("Simple_Platform");

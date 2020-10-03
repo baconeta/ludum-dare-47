@@ -19,6 +19,11 @@ var gameAssets = {
            "tile" : 349,
            "tileh": 122,
            "map": {"ground": [0, 0]}
+       },
+       "assets/images/ramp_curved.png": {
+           "tile" : 815,
+           "tileh": 355,
+           "map": {"ramp": [0, 0]}
        }
    }
 }
