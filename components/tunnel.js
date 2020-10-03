@@ -1,6 +1,7 @@
 Crafty.c("Tunnel", {
 	init: function() {
         this.addComponent("2D, DOM");
+        this.h = 206 - 10;
         this.top_hitbox = Crafty.e("Tunnel_Top_Hitbox");
         this.attach(this.top_hitbox);
         this.bottom_hitbox = Crafty.e("Tunnel_Bottom_Hitbox");
@@ -12,7 +13,7 @@ Crafty.c("Tunnel", {
     },
     place: function(x, y) {
         this.x = x;
-        this.y = y;
+        this.y = y - this.h;
         return this;
     }
 });
