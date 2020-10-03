@@ -7,12 +7,11 @@ Crafty.defineScene("Game", function() {
       y : 0.098
     }
   });
-  
-	var player = Crafty.e("Player");
 
+	var player = Crafty.e("Player");
 	var wheel = Crafty.e("Wheel");
-	player.attach(wheel);
 	var hamster = Crafty.e("Hamster");
+    player.attach(wheel);
 	player.attach(hamster)
 	hamster.x = 35;
 	hamster.y = 90
