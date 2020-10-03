@@ -1,7 +1,7 @@
 Crafty.defineScene("Game", function() {
 
   Crafty.Matter.init({
-    debug : true,
+    // debug : true,
     gravity : {
       x : 0,
       y : 0.098
