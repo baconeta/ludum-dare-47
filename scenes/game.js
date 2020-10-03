@@ -20,5 +20,6 @@ Crafty.defineScene("Game", function() {
 
 	player.x = 400;
 	simp_pf1.rotation = -25;
+    makeCameraTrackEntity(player, 75);
         // Matter.Body.setVelocity( player._body, {x : 5, y : 5 });
 });
