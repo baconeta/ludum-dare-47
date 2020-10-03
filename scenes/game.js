@@ -19,5 +19,7 @@ Crafty.defineScene("Game", function() {
 
 	var simp_pf1 = Crafty.e("Simple_Platform");
 
+	player.x = 400;
+	simp_pf1.rotation = -25;
         // Matter.Body.setVelocity( player._body, {x : 5, y : 5 });
 });
