@@ -1,7 +1,7 @@
 Crafty.defineScene("Game", function() {
 
 	Crafty.Matter.init({
-		// debug : true,
+		debug : true,
 		gravity : {
 		  x : 0,
 		  y : 0.098
@@ -17,11 +17,11 @@ Crafty.defineScene("Game", function() {
 	var wheel = Crafty.e("Wheel");
 	var hamster = Crafty.e("HamsterWrapper");
     player.attach(wheel);
-	hamster.x = 200;
-	hamster.y = 500;
+	hamster.x = 400;
+	hamster.y = 100;
 
-	player.x = 200;
-	player.y = 500;
+	player.x = 400;
+	player.y = 100;
 	var ball = Crafty.e("Ball");
 	ball.x = 550;
 	ball.y = 240;
@@ -50,6 +50,8 @@ Crafty.defineScene("Game", function() {
 	var simp_pf1 = Crafty.e("Platform").place(3000,500);
 
 	var house = Crafty.e("House").place(1500, 500);
+
+	var rock = Crafty.e("Rock").place(200,600);
 
 
     makeCameraTrackEntity(player, 75);
