@@ -8,8 +8,10 @@ Crafty.c("Door", {
         this.x = x;
         this.y = y - this.h; //remove height of the ground also
         if (isLocked == true) {
-            this.lock = Crafty.e()
-            //ATTACH LOCK TO DOOR
+            this.lock = Crafty.e("Lock");
+            this.attach(this.lock);
+            this.lock.x = this.x+20;
+            this.lock.y = this.y+150;
             //CO-ORDINATE LOCK AND DOOR
         }
     }
