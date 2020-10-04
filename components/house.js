@@ -16,6 +16,13 @@ Crafty.c("House", {
         this.attach(this.houseMatterRight);
         this.houseMatterLeft.x = this.w/4*3 - this.houseMatterLeft.w/2
         this.houseMatterRight.y = this.h/4;
+    },
+    place: function(x, y) {
+        this.x = x;
+        this.y = y;
+        // this.houseMatterLeft.x = this.x;
+        // this.HouseMatterRight.y = this.y;
+        return this;
     }
 })
 
@@ -40,7 +47,7 @@ Crafty.c("HouseMatterRight", {
     init: function () {
         this.addComponent("2D, DOM, Matter");
         this.attr({
-            rotation: -40,
+            rotation: -39,
             x: 0,
             y: 0,
             w: 200,
