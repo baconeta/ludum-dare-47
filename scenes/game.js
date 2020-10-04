@@ -8,7 +8,10 @@ Crafty.defineScene("Game", function() {
 		}
 	});
 
-    var background = Crafty.e("Background");
+    var background = Crafty.e("Background").place(150,-200,4000,1000);
+    background.set_boundaries();
+
+
 	var player = Crafty.e("Player");
 	var wheel = Crafty.e("Wheel");
 	var hamster = Crafty.e("Hamster");
@@ -21,9 +24,6 @@ Crafty.defineScene("Game", function() {
 	ball.x = 550;
 	ball.y = 240;
 
-	var hay = Crafty.e("Hay");
-	hay.x = -1* (hay.w/2);
-	hay.y = 1000;
 	var simp_pf1 = Crafty.e("Platform").place(400,300);
 	var simp_pf1 = Crafty.e("Platform").place(650,300);
     var tunnel1 = Crafty.e("Tunnel").place(850,300);
