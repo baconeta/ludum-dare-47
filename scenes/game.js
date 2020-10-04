@@ -52,7 +52,7 @@ Crafty.defineScene("Game", function() {
 
 	var house = Crafty.e("House").place(1500, 500);
 
-	var rock = Crafty.e("Rock").place(300,600);
+	var rock = Crafty.e("Rock").place(300,650);
 
 
     makeCameraTrackEntity(player, 75);
