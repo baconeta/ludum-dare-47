@@ -1,7 +1,7 @@
 Crafty.defineScene("Game", function() {
 
   Crafty.Matter.init({
-    debug : true,
+    //debug : true,
     gravity : {
       x : 0,
       y : 0.098
@@ -28,7 +28,7 @@ Crafty.defineScene("Game", function() {
 	// simp_pf3.rotation = -5;
 	// simp_pf3.x += 30;
 
-    var tunnel1 = Crafty.e("Tunnel"); //.place(200,100);
+    var tunnel1 = Crafty.e("Tunnel").place(200,100);
 
 
 	player.x = 400;
