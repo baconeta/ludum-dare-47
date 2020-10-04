@@ -3,7 +3,7 @@ Crafty.c("Platform", {
         this.addComponent("2D, DOM, platform");
         this.hitbox = Crafty.e("Platform_Hitbox2");
         this.attach(this.hitbox);
-		this.z = -10
+		this.z = -15
     },
 	place: function(x, y) {
 		this.x = x;

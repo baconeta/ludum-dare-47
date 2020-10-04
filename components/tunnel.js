@@ -63,7 +63,7 @@ Crafty.c("Tunnel_Front", {
 Crafty.c("Tunnel_Back", {
 	init: function() {
         this.addComponent("2D, DOM, tunnel_back");
-        this.z = -20;
-        this.x = 0
+        this.z = -10;
+        this.x = 0;
     }
 });
