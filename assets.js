@@ -94,6 +94,11 @@ var gameAssets = {
            "tile" : 407,
            "tileh": 272,
            "map": {"rock": [0, 0]}
+       },
+       "assets/images/key.png": {
+           "tile" : 125,
+           "tileh": 125,
+           "map": {"key": [0, 0]}
        }
    }
 }

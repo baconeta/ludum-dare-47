@@ -17,6 +17,12 @@ Crafty.c("Ball", {
                 this.removeComponent("Matter");
                 Crafty.trigger("KeyFellIn")
             }
+			if(e.target.matter.label === "rock") {
+                this.removeComponent("Matter, ball");
+				this.key = Crafty.e("Key").place(this.x,this.y);
+				console.log("key break");
+                Crafty.trigger("BallSmash");
+            }
         })
     }
 })

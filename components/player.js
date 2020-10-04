@@ -51,8 +51,10 @@ Crafty.c("Player", {
 				Crafty.trigger("UnlockDoor");
 			}
 		});
-		this.onHit('Key', function(e) {
-			//do something later when a key exists alone
+		this.onHit('Key', function(get_key) {
+			get_key[0].obj.destroy();
+			console.log("i got a key");
+			this.has_key = true;
         });
     }
 })
