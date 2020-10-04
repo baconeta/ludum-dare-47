@@ -5,6 +5,7 @@ Crafty.c("HamsterWrapper", {
         this.y = 0;
         this.w = 160;
         this.h = 160;
+        this.rotation = 0;
         this.origin("center");
         this.hamster = Crafty.e("Hamster");
         this.attach(this.hamster)
@@ -15,12 +16,30 @@ Crafty.c("HamsterWrapper", {
             this.y = position.y;
         })
         this.bind("PlayerVelocity", function(playerVelocity){
-            var speed = playerVelocity.x;
-            // Bound the variable of speed between -15 and 15.
-            speed = speed >  15 ?  15 : speed;
-            speed = speed < -15 ? -15 : speed;
-            this.rotation = -3 * speed;
+            if(this.holding_key) {
+                var speed = playerVelocity.x;
+                // Bound the variable of speed between -15 and 15.
+                speed = speed >  15 ?  15 : speed;
+                speed = speed < -15 ? -15 : speed;
+                this.rotation = -3 * speed;
+            } else {
+                this.rotation = this.wheelRotationTracker - this.rotationDifferenceAtTimeOfPause;
+            }
         })
+        this.bind("WheelRotation", function (r) {
+            this.wheelRotationTracker = r;
+        })
+        this.bind('KeyDown', function(e) {
+            if(e.key == Crafty.keys.LEFT_ARROW || e.key == Crafty.keys.RIGHT_ARROW) {
+                this.holding_key = true;
+            }
+        });
+        this.bind('KeyUp', function(e) {
+            if(e.key == Crafty.keys.LEFT_ARROW || e.key == Crafty.keys.RIGHT_ARROW) {
+                this.holding_key = false;
+                this.rotationDifferenceAtTimeOfPause = this.wheelRotationTracker - this.rotation;
+            }
+        });
     }
 })
 

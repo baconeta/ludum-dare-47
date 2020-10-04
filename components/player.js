@@ -20,7 +20,7 @@ Crafty.c("Player", {
         this.bind("Move", function (location) {
             Crafty.trigger("PlayerVelocity", this._body.velocity);
         	Crafty.trigger("PlayerPosition", {x:this.x, y:this.y});
-        })
+        });
         this.bind('KeyDown', function(e) {
 		    if(e.key == Crafty.keys.LEFT_ARROW) {
 				this.holding_key = true;

@@ -8,6 +8,7 @@ Crafty.c("Wheel", {
         this.origin("center")
         this.bind('PlayerVelocity', function(e) {
     		this.vrotation = e.x * 10;
+            Crafty.trigger("WheelRotation", this.rotation);
     	});
     }
 })
