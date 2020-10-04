@@ -44,7 +44,8 @@ Crafty.c("HayMatter", {
             w: 50000,
             h: 122,
             matter: {
-                isStatic : true
+                isStatic : true,
+                label: "ground"
             }
         })
     }

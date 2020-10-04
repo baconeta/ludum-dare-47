@@ -22,7 +22,11 @@ Crafty.defineScene("Game", function() {
 
 	player.x = 400;
 	player.y = 0;
-	
+	player.attr({
+		matter : {
+			label: 'player'
+		}
+	})
 	var ball = Crafty.e("Ball");
 
 	// var hay = Crafty.e("HayPiece");
@@ -54,5 +58,11 @@ Crafty.defineScene("Game", function() {
 
 
     makeCameraTrackEntity(player, 75);
+
+    Matter.Events.on(Crafty.Matter.engine, 'collisionStart', function (event) {
+		 event.pairs.forEach((collision) => {
+		    // console.log(collision);
+		  });
+    })
         // Matter.Body.setVelocity( player._body, {x : 5, y : 5 });
 });

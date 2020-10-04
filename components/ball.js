@@ -8,7 +8,14 @@ Crafty.c("Ball", {
             h: 50,
             matter: {
                 density: 2,
-                shape : "circle"
+                shape : "circle",
+                label: "ball"
+            }
+        })
+        this.bind("CollisionStart", function (e) {
+            if(e.target.matter.label === "ground") {
+                this.removeComponent("Matter");
+                Crafty.trigger("KeyFellIn")
             }
         })
     }

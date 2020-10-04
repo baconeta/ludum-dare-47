@@ -27,7 +27,7 @@ Crafty.c("Platform_Hitbox2", {
                 friction : 0,
                 density : 0.5,
                 isStatic : true,
-                label : 'floor'
+                label : 'platform'
             }
         });
     }
