@@ -1,7 +1,7 @@
 Crafty.defineScene("Game", function() {
 
   Crafty.Matter.init({
-    //debug : true,
+    // debug : true,
     gravity : {
       x : 0,
       y : 0.098
@@ -19,6 +19,9 @@ Crafty.defineScene("Game", function() {
 	var ball = Crafty.e("Ball");
 	ball.x = 550;
 	ball.y = 240;
+	var hay = Crafty.e("Hay");
+	hay.x = -1* (hay.w/2);
+	hay.y = 1000;
 
 	var simp_pf1 = Crafty.e("Platform").place(400,300);
 	var simp_pf1 = Crafty.e("Platform").place(650,300);
@@ -36,11 +39,6 @@ Crafty.defineScene("Game", function() {
 	var simp_pf1 = Crafty.e("Platform").place(2500,600);
 	var simp_pf1 = Crafty.e("Platform").place(2750,600);
 	var simp_pf1 = Crafty.e("Platform").place(3000,600);
-	// var simp_pf2 = Crafty.e("Simple_Platform");
-	// var simp_pf3 = Crafty.e("Simple_Platform");
-	// simp_pf2.rotation = 5;
-	// simp_pf3.rotation = -5;
-	// simp_pf3.x += 30;
 
 	player.x = 400;
 	player.y = 0;
