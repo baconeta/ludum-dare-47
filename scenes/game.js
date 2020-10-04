@@ -1,12 +1,12 @@
 Crafty.defineScene("Game", function() {
 
-  Crafty.Matter.init({
-    // debug : true,
-    gravity : {
-      x : 0,
-      y : 0.098
-    }
-  });
+	Crafty.Matter.init({
+	// debug : true,
+		gravity : {
+		  x : 0,
+		  y : 0.098
+		}
+	});
 
 	var player = Crafty.e("Player");
 	var wheel = Crafty.e("Wheel");
@@ -19,6 +19,7 @@ Crafty.defineScene("Game", function() {
 	var ball = Crafty.e("Ball");
 	ball.x = 550;
 	ball.y = 240;
+	
 	var hay = Crafty.e("Hay");
 	hay.x = -1* (hay.w/2);
 	hay.y = 1000;
