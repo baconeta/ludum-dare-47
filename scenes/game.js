@@ -20,7 +20,16 @@ Crafty.defineScene("Game", function() {
 	hamster.x = 35;
 	hamster.y = 90
 
+	player.x = 400;
+	player.y = 0;
+	
 	var ball = Crafty.e("Ball");
+
+	// var hay = Crafty.e("HayPiece");
+	// hay.x = player.x + 50;
+	// hay.y = player.y;
+
+
 	ball.x = 550;
 	ball.y = 240;
 
@@ -36,18 +45,14 @@ Crafty.defineScene("Game", function() {
 	var simp_pf1 = Crafty.e("Tunnel").place(2660,170);
 	var simp_pf1 = Crafty.e("Platform_Ramp_Right").place(2910,170);
 	var simp_pf1 = Crafty.e("Platform").place(2000,650);
-	var simp_pf1 = Crafty.e("Platform").place(2250,650);
-	var simp_pf1 = Crafty.e("Platform").place(2500,600);
-	var simp_pf1 = Crafty.e("Platform").place(2750,600);
-	var simp_pf1 = Crafty.e("Platform").place(3000,600);
+	var simp_pf1 = Crafty.e("Platform").place(2250,550);
+	var simp_pf1 = Crafty.e("Platform").place(2500,500);
+	var simp_pf1 = Crafty.e("Platform").place(2750,500);
+	var simp_pf1 = Crafty.e("Platform").place(3000,500);
 
-	var house = Crafty.e("House").place(1500, 400);
+	var house = Crafty.e("House").place(1500, 500);
 
-	player.x = 400;
-	player.y = 0;
 
-	player.x = 1400;
-	player.y = 500;
     makeCameraTrackEntity(player, 75);
         // Matter.Body.setVelocity( player._body, {x : 5, y : 5 });
 });

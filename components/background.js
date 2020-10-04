@@ -71,7 +71,7 @@ Crafty.c("Background", {
         cage_top.x = this.x;
         cage_top.y = this.y;
 
-        var hay = Crafty.e("Hay");
+        var hay = Crafty.e("HayFloor");
         hay.x = this.x;
         hay.w = this.w;
         hay.y = this.y + this.h - hay.h;
