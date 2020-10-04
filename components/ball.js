@@ -18,10 +18,9 @@ Crafty.c("Ball", {
                 Crafty.trigger("KeyFellIn")
             }
 			if(e.target.matter.label === "rock") {
-                this.removeComponent("Matter, ball");
-				this.key = Crafty.e("Key").place(this.x,this.y);
-				console.log("key break");
-                Crafty.trigger("BallSmash");
+                Crafty.trigger("BallSmash", {x: this.x, y: this.y});
+				e.target.remove(); //THIS SHOULD WORK BUT IT DOESN'T
+				this.removeComponent("Matter, ball");
             }
         })
     }

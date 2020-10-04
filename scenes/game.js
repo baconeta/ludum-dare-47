@@ -12,6 +12,7 @@ Crafty.defineScene("Game", function() {
     background.set_boundaries();
 	var next_level_door = Crafty.e("Door").place(1000,level_details.y+level_details.h-100, true);
 
+	var ballController = Crafty.e("BallController");
 
 	var player = Crafty.e("Player");
 	var wheel = Crafty.e("Wheel");

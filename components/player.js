@@ -53,7 +53,6 @@ Crafty.c("Player", {
 		});
 		this.onHit('Key', function(get_key) {
 			get_key[0].obj.destroy();
-			console.log("i got a key");
 			this.has_key = true;
         });
     }
