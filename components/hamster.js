@@ -10,7 +10,7 @@ Crafty.c("HamsterWrapper", {
         this.hamster = Crafty.e("Hamster");
         this.attach(this.hamster)
         this.hamster.x = this.h/2 - this.hamster.w/2;
-        this.hamster.y = 160 - this.hamster.h -6;
+        this.hamster.y = 160 - this.hamster.h -12;
         this.bind("PlayerPosition", function (position) {
             this.x = position.x;
             this.y = position.y;
