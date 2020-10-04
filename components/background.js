@@ -11,6 +11,7 @@ Crafty.c("Background", {
         this.y = y;
         this.w = w;
         this.h = h;
+        // var foreground = Crafty.e("Foreground").place(x,y,w,h);
         return this;
     },
     set_boundaries: function() {
