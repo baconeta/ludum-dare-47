@@ -1,11 +1,7 @@
 Crafty.defineScene("Game", function() {
 
   Crafty.Matter.init({
-<<<<<<< HEAD
     //debug : true,
-=======
-    // debug : true,	
->>>>>>> 93cedfca3f93602ce417df61153d6f6e7257ba9f
     gravity : {
       x : 0,
       y : 0.098
@@ -20,6 +16,10 @@ Crafty.defineScene("Game", function() {
 	hamster.x = 35;
 	hamster.y = 90
 
+	var ball = Crafty.e("Ball");
+	ball.x = 550;
+	ball.y = 240;
+
 	var simp_pf1 = Crafty.e("Platform").place(400,300);
 	var simp_pf1 = Crafty.e("Platform").place(650,300);
     var tunnel1 = Crafty.e("Tunnel").place(850,300);
@@ -28,19 +28,19 @@ Crafty.defineScene("Game", function() {
 	var simp_pf1 = Crafty.e("Platform").place(2000,170);
 	var simp_pf1 = Crafty.e("Platform").place(2250,170);
 	var simp_pf1 = Crafty.e("Tunnel").place(2500,170);
+	var simp_pf1 = Crafty.e("Platform").place(2600,100);
 	var simp_pf1 = Crafty.e("Tunnel").place(2660,170);
-	var simp_pf1 = Crafty.e("Platform_Ramp_Right").place(2760,170);
+	var simp_pf1 = Crafty.e("Platform_Ramp_Right").place(2810,170);
+	var simp_pf1 = Crafty.e("Platform").place(2000,650);
+	var simp_pf1 = Crafty.e("Platform").place(2250,650);
+	var simp_pf1 = Crafty.e("Platform").place(2500,600);
+	var simp_pf1 = Crafty.e("Platform").place(2750,600);
+	var simp_pf1 = Crafty.e("Platform").place(3000,600);
 	// var simp_pf2 = Crafty.e("Simple_Platform");
 	// var simp_pf3 = Crafty.e("Simple_Platform");
 	// simp_pf2.rotation = 5;
 	// simp_pf3.rotation = -5;
 	// simp_pf3.x += 30;
-
-<<<<<<< HEAD
-    var tunnel1 = Crafty.e("Tunnel").place(200,100);
-=======
->>>>>>> 93cedfca3f93602ce417df61153d6f6e7257ba9f
-
 
 	player.x = 400;
 	player.y = 0;
