@@ -25,6 +25,7 @@ Crafty.defineScene("Game", function() {
 	var simp_pf1 = Crafty.e("Platform").place(2250,170);
 	var simp_pf1 = Crafty.e("Tunnel").place(2500,170);
 	var simp_pf1 = Crafty.e("Tunnel").place(2660,170);
+	var simp_pf1 = Crafty.e("Platform_Ramp_Right").place(2760,170);
 	// var simp_pf2 = Crafty.e("Simple_Platform");
 	// var simp_pf3 = Crafty.e("Simple_Platform");
 	// simp_pf2.rotation = 5;
