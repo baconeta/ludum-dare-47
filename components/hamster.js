@@ -1,11 +1,10 @@
 Crafty.c("HamsterWrapper", {
     init: function() {
-        this.addComponent("2D, DOM, Color");
+        this.addComponent("2D, DOM");
         this.x = 0;
         this.y = 0;
         this.w = 160;
         this.h = 160;
-        // this.color("rgba(0, 255, 0, 0.2)");
         this.origin("center");
         this.hamster = Crafty.e("Hamster");
         this.attach(this.hamster)
@@ -16,12 +15,10 @@ Crafty.c("HamsterWrapper", {
             this.y = position.y;
         })
         this.bind("PlayerVelocity", function(playerVelocity){
-            // console.log(playerVelocity);
             var speed = playerVelocity.x;
             // Bound the variable of speed between -15 and 15.
             speed = speed >  15 ?  15 : speed;
             speed = speed < -15 ? -15 : speed;
-            // console.log(speed);
             this.rotation = -3 * speed;
         })
     }
