@@ -41,13 +41,13 @@ Crafty.defineScene("Game", function() {
 	var simp_pf1 = Crafty.e("Platform").place(2750,600);
 	var simp_pf1 = Crafty.e("Platform").place(3000,600);
 
-	var house = Crafty.e("House").place(1500, 600);
+	var house = Crafty.e("House").place(1500, 400);
 
 	player.x = 400;
 	player.y = 0;
 
 	player.x = 1400;
-	player.y = 600;
+	player.y = 500;
     makeCameraTrackEntity(player, 75);
         // Matter.Body.setVelocity( player._body, {x : 5, y : 5 });
 });
