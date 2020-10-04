@@ -2,8 +2,9 @@ Crafty.c("Player", {
 	init: function() {
 		this.direction_force = 0
 		this.force_level_x = 0
-		this.holding_key = false;
-        this.addComponent("2D, DOM, Color, Keyboard, Matter");
+		this.holding_key = false; //holding down a keyboard key
+		this.has_key = false; // has a key for the door
+        this.addComponent("2D, DOM, Color, Keyboard, Matter, Collision");
         this.attr({
             x : 0,
             y : 0,
@@ -42,7 +43,16 @@ Crafty.c("Player", {
 			if (this.holding_key == true) {
 				Matter.Body.applyForce(this._body, {x: this.x+this.direction_force, y: this.y}, {x: this.force_level_x, y: 0});
 			}
-           
+
+        });
+		this.onHit("Lock", function(pick_lock) {
+			if (this.has_key == true) {
+				pick_lock[0].obj.destroy();
+				Crafty.trigger("UnlockDoor");
+			}
+		});
+		this.onHit('Key', function(e) {
+			//do something later when a key exists alone
         });
     }
 })

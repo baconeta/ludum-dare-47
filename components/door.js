@@ -18,14 +18,13 @@ Crafty.c("Door", {
             this.attach(this.lock);
             this.lock.x = this.x+9;
             this.lock.y = this.y+208;
-            //CO-ORDINATE LOCK AND DOOR
         }
     }
 }),
 
 Crafty.c("Lock", {
     init: function () {
-        this.addComponent('2D, DOM, lock');
+        this.addComponent('2D, DOM, lock, Collision');
         this.z = -15;
     }
 }),
