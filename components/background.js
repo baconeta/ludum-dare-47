@@ -70,10 +70,11 @@ Crafty.c("Background", {
         cage_right.y = this.y;
         cage_top.x = this.x;
         cage_top.y = this.y;
+
         var hay = Crafty.e("Hay");
         hay.x = this.x;
         hay.w = this.w;
-        hay.y = this.y + this.h - 15;
+        hay.y = this.y + this.h - hay.h;
         return this;
     }
 });
