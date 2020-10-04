@@ -57,6 +57,8 @@ Crafty.c("Tunnel_Front", {
 	init: function() {
         this.addComponent("2D, DOM, tunnel_front");
         this.z = 20;
+		this.w = 205;
+		this.h = 206;
         this.x = 20;
     }
 })
@@ -64,6 +66,8 @@ Crafty.c("Tunnel_Back", {
 	init: function() {
         this.addComponent("2D, DOM, tunnel_back");
         this.z = -10;
+		this.w = 206;
+		this.h = 206;
         this.x = 0;
     }
 });
