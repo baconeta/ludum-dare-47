@@ -1,14 +1,11 @@
 Crafty.c("Door", {
     init: function () {
-        this.requires('2D, DOM, Color');
-        this.z = 2,
-        this.h = 150;
-        this.w = 25;
-        this.color('red');
+        this.requires('2D, DOM, door');
+        this.z = -16;
     },
     place: function (x,y) {
         // Pass coordinates to place door at given location
         this.x = x;
-        this.y = y - this.h - 122; //remove height of the ground also
+        this.y = y - this.h; //remove height of the ground also
     }
 })

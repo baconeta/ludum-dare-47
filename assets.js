@@ -54,6 +54,11 @@ var gameAssets = {
            "tile" : 125,
            "tileh": 125,
            "map": {"ball": [0, 0]}
+       },
+       "assets/images/door.png": {
+           "tile" : 258,
+           "tileh": 363,
+           "map": {"door": [0, 0]}
        }
    }
 }
