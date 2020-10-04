@@ -5,15 +5,35 @@ var gameAssets = {
            "tileh": 474,
            "map": {"wheel": [0, 0]}
        },
-       "assets/images/hammy_bigger_size.png": {
+       "assets/images/hammy_right.png": {
            "tile" : 442,
            "tileh": 294,
            "map": {"hamster_right": [0, 0]}
        },
-       "assets/images/hammy_bigger_size_left.png": {
+       "assets/images/hammy_left.png": {
            "tile" : 442,
            "tileh": 294,
            "map": {"hamster_left": [0, 0]}
+       },
+       "assets/images/hammy_running_1_left.png": {
+           "tile" : 442,
+           "tileh": 294,
+           "map": {"hamster__running_1_left": [0, 0]}
+       },
+       "assets/images/hammy_running_1_right.png": {
+           "tile" : 442,
+           "tileh": 294,
+           "map": {"hamster__running_1_right": [0, 0]}
+       },
+       "assets/images/hammy_running_2_left.png": {
+           "tile" : 442,
+           "tileh": 294,
+           "map": {"hamster__running_2_left": [0, 0]}
+       },
+       "assets/images/hammy_running_2_right.png": {
+           "tile" : 442,
+           "tileh": 294,
+           "map": {"hamster__running_2_right": [0, 0]}
        },
        "assets/images/ground.png": {
            "tile" : 349,
@@ -64,6 +84,11 @@ var gameAssets = {
            "tile" : 73,
            "tileh": 98,
            "map": {"lock": [0, 0]}
+       },
+       "assets/images/rock.png": {
+           "tile" : 407,
+           "tileh": 272,
+           "map": {"rock": [0, 0]}
        }
    }
 }
