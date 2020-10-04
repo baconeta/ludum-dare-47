@@ -1,7 +1,7 @@
 Crafty.defineScene("Game", function() {
 
 	Crafty.Matter.init({
-	// debug : true,
+	// debug : true,	
 		gravity : {
 		  x : 0,
 		  y : 0.098
@@ -26,6 +26,8 @@ Crafty.defineScene("Game", function() {
 
 	var simp_pf1 = Crafty.e("Platform").place(400,300);
 	var simp_pf1 = Crafty.e("Platform").place(650,300);
+	var house = Crafty.e("House");
+	house.y = 300;
     var tunnel1 = Crafty.e("Tunnel").place(850,300);
 	var simp_pf1 = Crafty.e("Platform").place(1020,300);
 	var simp_pf1 = Crafty.e("Platform_Ramp_Right").place(1265,210);
@@ -33,7 +35,7 @@ Crafty.defineScene("Game", function() {
 	var simp_pf1 = Crafty.e("Platform").place(2250,170);
 	var simp_pf1 = Crafty.e("Tunnel").place(2500,170);
 	var simp_pf1 = Crafty.e("Tunnel").place(2660,170);
-	var simp_pf1 = Crafty.e("Platform_Ramp_Right").place(2810,170);
+	var simp_pf1 = Crafty.e("Platform_Ramp_Right").place(2910,170);
 	var simp_pf1 = Crafty.e("Platform").place(2000,650);
 	var simp_pf1 = Crafty.e("Platform").place(2250,650);
 	var simp_pf1 = Crafty.e("Platform").place(2500,600);

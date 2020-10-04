@@ -1,6 +1,6 @@
 Crafty.c("Ball", {
 	init: function() {
-        this.addComponent("2D, DOM, Color, ball, Matter");
+        this.addComponent("2D, DOM, ball, Matter");
         this.attr({
             x: 0,
             y: 0,
@@ -10,6 +10,5 @@ Crafty.c("Ball", {
                 shape : "circle"
             }
         })
-        this.color("red");
     }
 })
