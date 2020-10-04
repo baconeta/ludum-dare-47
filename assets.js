@@ -76,14 +76,19 @@ var gameAssets = {
            "map": {"ball": [0, 0]}
        },
        "assets/images/door.png": {
-           "tile" : 258,
-           "tileh": 363,
+           "tile" : 646,
+           "tileh": 910,
            "map": {"door": [0, 0]}
        },
        "assets/images/lock.png": {
            "tile" : 73,
            "tileh": 98,
            "map": {"lock": [0, 0]}
+       },
+       "assets/images/handle.png": {
+           "tile" : 52,
+           "tileh": 115,
+           "map": {"door_handle": [0, 0]}
        },
        "assets/images/rock.png": {
            "tile" : 407,

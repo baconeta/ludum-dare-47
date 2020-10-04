@@ -10,7 +10,7 @@ Crafty.defineScene("Game", function() {
 	var level_details = {x:150,y:-200,w:4000,h:1000}
     var background = Crafty.e("Background").place(level_details.x,level_details.y,level_details.w,level_details.h);
     background.set_boundaries();
-	var next_level_door = Crafty.e("Door").place(1000,level_details.y+level_details.h-100, false);
+	var next_level_door = Crafty.e("Door").place(1000,level_details.y+level_details.h-100, true);
 
 
 	var player = Crafty.e("Player");
