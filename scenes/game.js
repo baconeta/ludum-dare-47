@@ -1,15 +1,16 @@
 Crafty.defineScene("Game", function() {
 
 	Crafty.Matter.init({
-		// debug : true,	
+		// debug : true,
 		gravity : {
 		  x : 0,
 		  y : 0.098
 		}
 	});
-
-    var background = Crafty.e("Background").place(150,-200,4000,1000);
+	var level_details = {x:150,y:-200,w:4000,h:1000}
+    var background = Crafty.e("Background").place(level_details.x,level_details.y,level_details.w,level_details.h);
     background.set_boundaries();
+	var next_level_door = Crafty.e("Door").place(level_details.x+level_details.w,level_details.y+level_details.h);
 
 
 	var player = Crafty.e("Player");
@@ -22,7 +23,7 @@ Crafty.defineScene("Game", function() {
 
 	player.x = 400;
 	player.y = 0;
-	
+
 	var ball = Crafty.e("Ball");
 
 	// var hay = Crafty.e("HayPiece");
