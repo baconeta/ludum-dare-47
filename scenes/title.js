@@ -1,11 +1,12 @@
 Crafty.defineScene("Title", function() {
 // To have a background, play button, set-up functionality, music/mute once implemented
     var gameStartBackground = Crafty.e("StartBackground");
-    // gameStartBackground.bind('Click', function() {
-    //     if (Crafty.audio.isPlaying("bgAudio") == false) {
-    //         audioController.loadTrack("bgAudio", -1, 0.25);
-    //     }
-    // })
+    gameStartBackground.bind('Click', function() {
+        if (Crafty.audio.isPlaying("bgAudio") == false) {
+            console.log(audioController);
+            audioController.loadTrack("bgAudio", -1, 0.25);
+        }
+    })
     var playGameButton = Crafty.e("2D, DOM, Image, Mouse, play_button")
         .attr({
             x: GAME_SCREEN_WIDTH/2-65,
@@ -15,9 +16,9 @@ Crafty.defineScene("Title", function() {
         })
         .bind('Click', function(MouseEvent){
                 // audioController.playTrack("jump2,", 1, 0.3)
-                // if (Crafty.audio.isPlaying("bgAudio") == false) {
-                //     audioController.loadTrack("bgAudio", -1, 0.25);
-                // }
+                if (Crafty.audio.isPlaying("bgAudio") == false) {
+                    audioController.loadTrack("bgAudio", -1, 0.25);
+                }
                 totalSeconds = 0;
                 Crafty.scene('Game');
         });

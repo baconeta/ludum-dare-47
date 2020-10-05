@@ -1,4 +1,9 @@
 var gameAssets = {
+    "audio": {
+		"bgAudio" : ["assets/sounds/music.mp3"],
+		"glass" : ["assets/sounds/glass.wav"],
+		"unlock" : ["assets/sounds/unlock.wav"]
+    },
     "sprites": {
        "assets/images/wheel_whole.png": {
            "tile" : 473,

@@ -1,4 +1,5 @@
 Crafty.c("AudioController", {
+	// Set me as persistant or global to avoid destruction between scenes
 	init: function() {
         this.addComponent("Delay");
     },
