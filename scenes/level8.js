@@ -52,6 +52,6 @@ Crafty.defineScene("Level8", function() {
     var ball_controller = Crafty.e("Ball_Controller");
 	ball.x = 480;
 	ball.y = 40;
-    var rock = Crafty.e("Rock").place(1400,1600);
+    var rock = Crafty.e("Rock").place(1415,1620);
 
 })
