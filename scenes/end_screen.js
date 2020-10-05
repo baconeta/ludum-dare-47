@@ -1,11 +1,7 @@
 Crafty.defineScene("EndScreen", function() {
 // To have a background, play button, set-up functionality, music/mute once implemented
     var gameStartBackground = Crafty.e("EndBackground");
-    // gameStartBackground.bind('Click', function() {
-    //     if (Crafty.audio.isPlaying("bgAudio") == false) {
-    //         audioController.loadTrack("bgAudio", -1, 0.25);
-    //     }
-    // })
+
     var playGameButton = Crafty.e("2D, DOM, Image, Mouse, play_again_button")
         .attr({
             x: GAME_SCREEN_WIDTH/2-65,
@@ -23,6 +19,24 @@ Crafty.defineScene("EndScreen", function() {
     var time_taken = Crafty.e("Score")
         .text("Time Elapsed: " + timer.gametime)
         .attr({x: 330, y: GAME_SCREEN_HEIGHT-240});
+
+    var muteMusic = Crafty.e("2D, Color, Mouse, DOM, mute_button");
+    muteMusic.attr({x: 30, y: 30, w: 38, h:42, vx:5});
+    if (audioController.muted == true) {
+        muteMusic.alpha = 0.2;
+    }
+    muteMusic.bind('Click', function(MouseEvent){
+    	if (audioController.muted == false) {
+    		audioController.muted = true;
+    		this.alpha = 0.2;
+    		audioController.pauseTrack("bgAudio", 0)
+    	}
+    	else {
+    		audioController.muted = false;
+    		this.alpha = 1;
+    		audioController.playTrack("bgAudio", -1, 0.25)
+    	}
+    });
 });
 
 Crafty.c("EndBackground", {
