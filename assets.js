@@ -5,35 +5,12 @@ var gameAssets = {
            "tileh": 474,
            "map": {"wheel": [0, 0]}
        },
-       "assets/images/hammy_right.png": {
+       "assets/images/hammy_ss.png": {
            "tile" : 442,
            "tileh": 294,
-           "map": {"hamster_right": [0, 0]}
-       },
-       "assets/images/hammy_left.png": {
-           "tile" : 442,
-           "tileh": 294,
-           "map": {"hamster_left": [0, 0]}
-       },
-       "assets/images/hammy_running_1_left.png": {
-           "tile" : 442,
-           "tileh": 294,
-           "map": {"hamster__running_1_left": [0, 0]}
-       },
-       "assets/images/hammy_running_1_right.png": {
-           "tile" : 442,
-           "tileh": 294,
-           "map": {"hamster__running_1_right": [0, 0]}
-       },
-       "assets/images/hammy_running_2_left.png": {
-           "tile" : 442,
-           "tileh": 294,
-           "map": {"hamster__running_2_left": [0, 0]}
-       },
-       "assets/images/hammy_running_2_right.png": {
-           "tile" : 442,
-           "tileh": 294,
-           "map": {"hamster__running_2_right": [0, 0]}
+           "padding" : 1,
+           "map": {"hamster_right": [1, 0],
+                    "hamster_left": [0, 0]}
        },
        "assets/images/ground.png": {
            "tile" : 349,
@@ -129,11 +106,6 @@ var gameAssets = {
            "tile" : 352,
            "tileh": 127,
            "map": {"play_again_button": [0, 0]}
-       },
-       "assets/images/grate_platform.png": {
-           "tile" : 876,
-           "tileh": 115,
-           "map": {"ladder": [0, 0]}
        },
    }
 }

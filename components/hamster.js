@@ -47,5 +47,13 @@ Crafty.c("Hamster", {
 			this.h = 59;
           }
 	  });
+  },
+  setReelSpeed: function () {
+		this.reel("walking_right_no", char_anim_time, [
+			[0, 2], [4, 1], [1, 2], [4, 1]
+		])
+		this.reel("walking_left_no", char_anim_time, [
+			[2, 1], [1, 1], [3, 1], [1, 1]
+		])
     }
 })
