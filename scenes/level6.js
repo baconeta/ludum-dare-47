@@ -1,4 +1,4 @@
-Crafty.defineScene("Level4", function() {
+Crafty.defineScene("Level6", function() {
 
     // Create level information basics //
     var level_details = {x:0,y:0,w:2500,h:750}
@@ -10,21 +10,26 @@ Crafty.defineScene("Level4", function() {
         if (next_level_loading == false) {
             next_level_loading = true;
             setTimeout(function () {
-                Crafty.scene("Level5");
+                Crafty.scene("EndScreen");
             }, 500);
         }
     });
     Crafty.bind("ResetLevel", function() {
         if (next_level_loading == false) {
             next_level_loading = true;
-            Crafty.scene("Level4");
+            Crafty.scene("Level6");
         }
     });
 
     // Object and obstacle placements //
-    var platform = Crafty.e("Platform").place(400,300);
-    var platform = Crafty.e("Platform").place(650,300);
-    var ramp = Crafty.e("Platform_Ramp_Left").place(910,315);
+
+    var platform = Crafty.e("Platform").place(0,360);
+    var ramp = Crafty.e("Small_Ramp_Right").place(240,270);
+    var platform = Crafty.e("Platform_Ramp_Left").place(400,320);
+    var platform = Crafty.e("Platform").place(700,400);
+    var tunnel = Crafty.e("Tunnel").place(920, 400);
+    var platform = Crafty.e("Platform").place(1120,400);
+    var platform = Crafty.e("Platform").place(1370,400);
 
     // Hamster and Wheel Code //
     var hamster = Crafty.e("HamsterWrapper");
@@ -38,8 +43,8 @@ Crafty.defineScene("Level4", function() {
     // Ball and Key Code //
     var ball = Crafty.e("Ball");
     var ball_controller = Crafty.e("Ball_Controller");
-    ball.x = 550;
-    ball.y = 240;
-    var rock = Crafty.e("Rock").place(1500,600);
+    ball.x = 920;
+    ball.y = 140;
+    var rock = Crafty.e("Rock").place(1650,600);
 
 })
