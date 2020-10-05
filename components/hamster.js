@@ -38,23 +38,14 @@ Crafty.c("Hamster", {
 		this.h = 59;
         this.z = 2;
         this.origin("center")
+        this.setReelSpeed(this.animation_speed);
         this.bind('KeyDown', function(e) {
           if(e.key == Crafty.keys.LEFT_ARROW) {
-            this.setReelSpeed(this.animation_speed);
             this.animate("facing_left", -1);
-			this.addComponent("hamster_left")
             this.facing = "left";
-			this.removeComponent("hamster_right")
-			this.w = 88;
-			this.h = 59;
           } else if (e.key == Crafty.keys.RIGHT_ARROW) {
-            this.setReelSpeed(this.animation_speed);
             this.animate("facing_right", -1);
             this.facing = "right";
-			this.removeComponent("hamster_left")
-			this.addComponent("hamster_right")
-			this.w = 88;
-			this.h = 59;
           }
 	  });
   },
