@@ -18,6 +18,7 @@ Crafty.defineScene("EndScreen", function() {
                 // if (Crafty.audio.isPlaying("bgAudio") == false) {
                 //     audioController.loadTrack("bgAudio", -1, 0.25);
                 // }
+                totalSeconds = 0;
                 Crafty.scene('Game');
         });
 });

@@ -1,5 +1,4 @@
 Crafty.defineScene("Level1", function() {
-
     // Create level information basics //
     var level_details = {x:0,y:0,w:1600,h:700}
     var background = Crafty.e("Background").place(level_details.x,level_details.y,level_details.w,level_details.h);
