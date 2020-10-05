@@ -131,7 +131,7 @@ var gameAssets = {
            "map": {"play_again_button": [0, 0]}
        },
        "assets/images/grate_platform.png": {
-           "tile" : 876,
+           "tile" : 1072,
            "tileh": 115,
            "map": {"ladder": [0, 0]}
        },
