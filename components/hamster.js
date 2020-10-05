@@ -22,7 +22,13 @@ Crafty.c("HamsterWrapper", {
             speed = speed >  15 ?  15 : speed;
             speed = speed < -15 ? -15 : speed;
             this.rotation = -3 * speed;
-            //if hamster speed is 0 pause animation
+            if (speed < 1 && speed > -1) {
+                this.hamster.pauseAnimation();
+            }
+            else {
+                this.hamster.resumeAnimation();
+            }
+
         })
     }
 })
