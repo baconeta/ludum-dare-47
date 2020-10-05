@@ -31,6 +31,8 @@ Crafty.c("Player", {
 				this.directional_force = -10
 				this.force_level_x = 5
 				this.holding_key = true;
+			} else if (e.key == Crafty.keys.SPACE) {
+				Crafty.trigger("ResetLevel");
 			}
     	});
 		this.bind('KeyUp', function(e) {

@@ -14,6 +14,12 @@ Crafty.defineScene("Level2", function() {
             }, 500);
         }
     });
+    Crafty.bind("ResetLevel", function() {
+        if (next_level_loading == false) {
+            next_level_loading = true;
+            Crafty.scene("Level2");
+        }
+    });
 
     // Object and obstacle placements //
     var platform = Crafty.e("Platform").place(400,300);
