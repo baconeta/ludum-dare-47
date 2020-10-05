@@ -2,6 +2,7 @@ Crafty.c("AudioController", {
 	// Set me as persistant or global to avoid destruction between scenes
 	init: function() {
         this.addComponent("Delay");
+		this.muted = false;
     },
 
     loadTrack : function(trackName, timesToPlay=1, trackVolume=1.0) {

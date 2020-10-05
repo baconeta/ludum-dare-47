@@ -2,7 +2,7 @@ Crafty.defineScene("Title", function() {
 // To have a background, play button, set-up functionality, music/mute once implemented
     var gameStartBackground = Crafty.e("StartBackground");
     gameStartBackground.bind('Click', function() {
-        if (Crafty.audio.isPlaying("bgAudio") == false && BGmuted == false) {
+        if (Crafty.audio.isPlaying("bgAudio") == false && audioController.muted == false) {
             console.log(audioController);
             audioController.loadTrack("bgAudio", -1, 0.25);
         }
@@ -16,7 +16,7 @@ Crafty.defineScene("Title", function() {
         })
         .bind('Click', function(MouseEvent){
                 // audioController.playTrack("jump2,", 1, 0.3)
-                if (Crafty.audio.isPlaying("bgAudio") == false && BGmuted == false) {
+                if (Crafty.audio.isPlaying("bgAudio") == false && audioController.muted == false) {
                     audioController.loadTrack("bgAudio", -1, 0.25);
                 }
                 totalSeconds = 0;
@@ -41,13 +41,13 @@ Crafty.defineScene("Title", function() {
     var muteMusic = Crafty.e("2D, Color, Mouse, DOM, mute_button");
     muteMusic.attr({x: 30, y: 30, w: 38, h:42, vx:5});
     muteMusic.bind('Click', function(MouseEvent){
-    	if (BGmuted == false) {
-    		BGmuted = true;
+    	if (audioController.muted == false) {
+    		audioController.muted = true;
     		this.alpha = 0.2;
     		audioController.pauseTrack("bgAudio", 0)
     	}
     	else {
-    		BGmuted = false;
+    		audioController.muted = false;
     		this.alpha = 1;
     		audioController.playTrack("bgAudio", -1, 0.25)
     	}

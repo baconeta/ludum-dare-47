@@ -1,5 +1,4 @@
 var audioController = Crafty.e("AudioController");
-var BGmuted = false;
 audioController.loadTrack("bgAudio", -1, 0.25);
 Crafty.defineScene("Loading", function() {
     Crafty.e("2D, DOM, Text")
