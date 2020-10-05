@@ -60,6 +60,16 @@ var gameAssets = {
            "tileh": 122,
            "map": {"platform_ramp_right": [0, 0]}
        },
+       "assets/images/s_ramp_left.png": {
+           "tile" : 410,
+           "tileh": 268,
+           "map": {"s_ramp_left": [0, 0]}
+       },
+       "assets/images/s_ramp_right.png": {
+           "tile" : 410,
+           "tileh": 268,
+           "map": {"s_ramp_right": [0, 0]}
+       },
        "assets/images/ramp_left.png": {
            "tile" : 349,
            "tileh": 122,
