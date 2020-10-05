@@ -23,7 +23,6 @@ Crafty.defineScene("Title", function() {
                 Crafty.scene('Game');
         });
 
-
     var title = Crafty.e("2D, DOM, title")
         .attr({x: 200, y: 0});
 
@@ -38,6 +37,21 @@ Crafty.defineScene("Title", function() {
     var title = Crafty.e("CreditsText")
         .text("Game Dev by Joshua Pearson")
         .attr({x: 650, y: GAME_SCREEN_HEIGHT-37});
+
+    var muteMusic = Crafty.e("2D, Color, Mouse, DOM, mute_button");
+    muteMusic.attr({x: 30, y: 30, w: 38, h:42, vx:5});
+    muteMusic.bind('Click', function(MouseEvent){
+    	if (BGmuted == false) {
+    		BGmuted = true;
+    		this.alpha = 0.2;
+    		audioController.pauseTrack("bgAudio", 0)
+    	}
+    	else {
+    		BGmuted = false;
+    		this.alpha = 1;
+    		audioController.playTrack("bgAudio", -1, 0.25)
+    	}
+    });
 });
 
 Crafty.c("StartBackground", {

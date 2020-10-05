@@ -107,6 +107,11 @@ var gameAssets = {
            "tileh": 1500,
            "map": {"end_screen": [0, 0]}
        },
+       "assets/images/music_mute_button.png": {
+           "tile" : 95,
+           "tileh": 105,
+           "map": {"mute_button": [0, 0]}
+       },
        "assets/images/play_again_button.png": {
            "tile" : 352,
            "tileh": 127,
