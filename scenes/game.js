@@ -8,7 +8,7 @@ Crafty.defineScene("Game", function() {
 		}
 	});
 
-	Crafty.scene("Level3");
+	Crafty.scene("Level4");
 
 	// var hay = Crafty.e("HayPiece");
 	// hay.x = player.x + 50;
