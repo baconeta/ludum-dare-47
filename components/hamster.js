@@ -32,6 +32,7 @@ Crafty.c("Hamster", {
         this.y = 0;
 		this.w = 88;
 		this.h = 59;
+        this.z = 2;
         this.origin("center")
         this.bind('KeyDown', function(e) {
           if(e.key == Crafty.keys.LEFT_ARROW) {
