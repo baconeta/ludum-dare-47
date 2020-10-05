@@ -42,7 +42,7 @@ Crafty.c("Ladder", {
             var hitbox = Crafty.e("Ladder_HitBox");
             this.attach(hitbox);
             hitbox.place(x,y);
-            hitbox.x = this.x + 94 * i + 22;
+            hitbox.x = this.x + 90 * i + 28;
             this.hitboxes.push(hitbox);
         }
         return this;
@@ -52,13 +52,13 @@ Crafty.c("Ladder", {
 Crafty.c("Ladder_HitBox", {
     init: function () {
         this.requires('2D, DOM, Color');
-        this.color("red");
+        // this.color("red");
     },
     place: function (x,y) {
         this.addComponent('Matter');
         this.attr({
             x : x,
-            y : y+35,
+            y : y+25,
             w : 7,
             h : 7,
             z : 2,
