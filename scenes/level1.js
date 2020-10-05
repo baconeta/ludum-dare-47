@@ -1,7 +1,7 @@
 Crafty.defineScene("Level1", function() {
 
     // Create level information basics //
-    var level_details = {x:0,y:-200,w:2000,h:1000}
+    var level_details = {x:0,y:0,w:1600,h:700}
     var background = Crafty.e("Background").place(level_details.x,level_details.y,level_details.w,level_details.h);
     background.set_boundaries();
     var next_level_loading = false;
@@ -24,7 +24,7 @@ Crafty.defineScene("Level1", function() {
 	var wheel = Crafty.e("Wheel");
     player.attach(wheel);
 	player.x = 300;
-	player.y = 700;
+	player.y = 550;
     makeCameraTrackEntity(player, 75);
 
     // Ball and Key Code //
