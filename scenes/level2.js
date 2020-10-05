@@ -1,11 +1,4 @@
 Crafty.defineScene("Level2", function() {
-    // Crafty.Matter.init({
-    //     debug : true,
-    //     gravity : {
-    //       x : 0,
-    //       y : 0.098
-    //     }
-    // });
 
     // Create level information basics //
     var level_details = {x:0,y:-200,w:4000,h:1000}
