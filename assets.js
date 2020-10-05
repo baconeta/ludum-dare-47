@@ -99,6 +99,11 @@ var gameAssets = {
            "tile" : 125,
            "tileh": 125,
            "map": {"key": [0, 0]}
-       }
+       },
+       "assets/images/title_screen_draft.png": {
+           "tile" : 2250,
+           "tileh": 1500,
+           "map": {"title_screen": [0, 0]}
+       },
    }
 }
