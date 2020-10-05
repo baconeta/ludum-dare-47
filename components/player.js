@@ -49,6 +49,9 @@ Crafty.c("Player", {
         });
 		this.onHit("Lock", function(pick_lock) {
 			if (this.has_key == true) {
+				if (audioController.muted == false) {
+					audioController.playTrack("unlock", 1, 1);
+				}
 				pick_lock[0].obj.destroy();
 				Crafty.trigger("UnlockDoor");
 			}

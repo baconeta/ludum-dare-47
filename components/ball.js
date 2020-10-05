@@ -18,7 +18,9 @@ Crafty.c("Ball", {
                 Crafty.trigger("KeyFellIn")
             }
 			if(e.target.matter.label === "rock") {
-				audioController.playTrack("glass", 1, 1);
+				if (audioController.muted == false) {
+					audioController.playTrack("glass", 1, 1);
+				}
                 Crafty.trigger("BallSmash", {x: this.x, y: this.y});
 				this.remove = true;
 				this.removeComponent("Matter, ball");
