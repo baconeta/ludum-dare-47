@@ -1,6 +1,8 @@
 Crafty.c("HamsterWrapper", {
     init: function() {
         this.addComponent("2D, DOM");
+        this.facing = "right";
+        this.animation_speed = 25; //stemp
         this.x = 0;
         this.y = 0;
         this.w = 160;
@@ -20,6 +22,7 @@ Crafty.c("HamsterWrapper", {
             speed = speed >  15 ?  15 : speed;
             speed = speed < -15 ? -15 : speed;
             this.rotation = -3 * speed;
+            //iuf hamster speed is 0 pause animation
         })
     }
 })
@@ -27,20 +30,27 @@ Crafty.c("HamsterWrapper", {
 
 Crafty.c("Hamster", {
 	init: function() {
-        this.addComponent("2D, DOM, hamster_right, Keyboard, Collision");
+        this.addComponent("2D, DOM, Image, hamster_right, Keyboard, Collision, SpriteAnimation");
         this.x = 0;
         this.y = 0;
 		this.w = 88;
+        this.animation_speed = 25;
 		this.h = 59;
         this.z = 2;
         this.origin("center")
         this.bind('KeyDown', function(e) {
           if(e.key == Crafty.keys.LEFT_ARROW) {
+            this.setReelSpeed(this.animation_speed);
+            this.animate("facing_left", -1);
 			this.addComponent("hamster_left")
+            this.facing = "left";
 			this.removeComponent("hamster_right")
 			this.w = 88;
 			this.h = 59;
           } else if (e.key == Crafty.keys.RIGHT_ARROW) {
+            this.setReelSpeed(this.animation_speed);
+            this.animate("facing_right", -1);
+            this.facing = "right";
 			this.removeComponent("hamster_left")
 			this.addComponent("hamster_right")
 			this.w = 88;
@@ -48,12 +58,13 @@ Crafty.c("Hamster", {
           }
 	  });
   },
-  setReelSpeed: function () {
-		this.reel("walking_right_no", char_anim_time, [
-			[0, 2], [4, 1], [1, 2], [4, 1]
+  setReelSpeed: function (animation_speed) {
+        console.log(animation_speed);
+		this.reel("facing_right", animation_speed, [
+			[1, 0], [1, 1], [1, 0], [1, 2]
 		])
-		this.reel("walking_left_no", char_anim_time, [
-			[2, 1], [1, 1], [3, 1], [1, 1]
+		this.reel("facing_left", animation_speed, [
+			[0, 0], [0, 1], [0, 0], [0, 2]
 		])
     }
 })
