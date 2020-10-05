@@ -59,7 +59,6 @@ Crafty.c("Hamster", {
 	  });
   },
   setReelSpeed: function (animation_speed) {
-        console.log(animation_speed);
 		this.reel("facing_right", animation_speed, [
 			[1, 0], [1, 1], [1, 0], [1, 2]
 		])
