@@ -38,11 +38,11 @@ Crafty.c("Ladder", {
         this.h = Math.floor(115/2);
         this.z = 2;
         this.hitboxes = [];
-        for (var i = 0; i < 8; i++) {
+        for (var i = 0; i < 6; i++) {
             var hitbox = Crafty.e("Ladder_HitBox");
             this.attach(hitbox);
             hitbox.place(x,y);
-            hitbox.x = this.x + 60 * i + 22;
+            hitbox.x = this.x + 94 * i + 22;
             this.hitboxes.push(hitbox);
         }
         return this;
