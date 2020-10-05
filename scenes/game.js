@@ -1,4 +1,3 @@
-
 Crafty.defineScene("Game", function() {
 	// This Scene should be used to set up global variables, scoring, timing, gravity etc
 
