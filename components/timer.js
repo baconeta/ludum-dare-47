@@ -3,11 +3,11 @@ Crafty.c("Timer", {
         this.requires('2D, DOM, Text, Delay, Persist')
         // this.attr({w: 65, h: 100, x: 0, y: 0})
         // this.z = 1000;
-        this.text("00:00")
+        //this.text("00:00")
         this.totalSeconds = 0;
         // this.css('text-shadow', '1px 1px 1px black')
         // this.textColor('#EEE');
-        this.unselectable()
+        //this.unselectable()
         this.delay(this.updateTimer, 1000, -1);
         // this.textFont({ size: '17px', weight: 'bold' });
     },
@@ -25,6 +25,6 @@ Crafty.c("Timer", {
 
         this.gametime = ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2)
         //update time text
-        this.text(this.gametime);
+        //this.text(this.gametime);
     },
 });
