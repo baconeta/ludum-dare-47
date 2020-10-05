@@ -1,6 +1,7 @@
 Crafty.defineScene("Game", function() {
+	// This Scene should be used to set up global variables, scoring, timing, gravity etc
 	Crafty.Matter.init({
-		// debug : true,
+		debug : true,
 		gravity : {
 		  x : 0,
 		  y : 0.098
