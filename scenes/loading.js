@@ -8,11 +8,7 @@ Crafty.defineScene("Loading", function() {
 
   	Crafty.load(gameAssets, function(){
        setTimeout(function () {
-<<<<<<< HEAD
-         Crafty.scene('Level8');
-=======
-         Crafty.scene('Level7');
->>>>>>> ef47c09b61c7d00d25c6fc0862169b8c7ff5162e
+           Crafty.scene('Level8');
        }, 1000);
     },  function () {
       console.log("Crafty Load Issue");
