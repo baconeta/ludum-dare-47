@@ -30,7 +30,7 @@ Crafty.c("Hamster", {
         this.addComponent("2D, DOM, hamster_right, Keyboard, Collision");
         this.x = 0;
         this.y = 0;
-		this.w = 80; // 88
+		this.w = 88;
 		this.h = 59;
         this.origin("center")
         this.bind('KeyDown', function(e) {
