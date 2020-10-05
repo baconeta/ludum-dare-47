@@ -19,6 +19,7 @@ Crafty.defineScene("EndScreen", function() {
                 //     audioController.loadTrack("bgAudio", -1, 0.25);
                 // }
                 totalSeconds = 0;
+                numberOfResets = 0;
                 Crafty.scene('Game');
         });
 });

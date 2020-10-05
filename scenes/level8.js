@@ -17,6 +17,7 @@ Crafty.defineScene("Level8", function() {
     Crafty.bind("ResetLevel", function() {
         if (next_level_loading == false) {
             next_level_loading = true;
+            numberOfResets += 1;
             Crafty.scene("Level8");
         }
     });
