@@ -2,7 +2,7 @@ var GAME_SCREEN_WIDTH = 900;
 var GAME_SCREEN_HEIGHT = 600;
 var CURRENT_LEVEL = 0;
 Crafty.Matter.init({
-	//debug : true,
+	// debug : true,
 	gravity : {
 	  x : 0,
 	  y : 0.098
