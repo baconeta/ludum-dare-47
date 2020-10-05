@@ -48,10 +48,8 @@ Crafty.defineScene("Level3", function() {
     var player = Crafty.e("Player");
 	var wheel = Crafty.e("Wheel");
     player.attach(wheel);
-	// player.x = 15;
-	// player.y = 1100;
-    player.x = 1000;
-    player.y = 300;
+	player.x = 15;
+	player.y = 1100
     makeCameraTrackEntity(player, 75);
 
     // Ball and Key Code //
