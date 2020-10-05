@@ -20,7 +20,7 @@ Crafty.defineScene("Level1", function() {
 
     // Hamster and Wheel Code //
     var hamster = Crafty.e("HamsterWrapper");
-    hamster.x = 500;
+    hamster.x = 1000;
     hamster.y = 100;
     var player = Crafty.e("Player");
 	var wheel = Crafty.e("Wheel");
