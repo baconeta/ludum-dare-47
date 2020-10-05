@@ -18,7 +18,6 @@ Crafty.defineScene("Title", function() {
                 if (Crafty.audio.isPlaying("bgAudio") == false && audioController.muted == false) {
                     audioController.playTrack("bgAudio", -1, 0.25);
                 }
-                totalSeconds = 0;
                 Crafty.scene('Game');
         });
 

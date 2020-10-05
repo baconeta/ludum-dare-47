@@ -14,14 +14,15 @@ Crafty.defineScene("EndScreen", function() {
             h: 51
         })
         .bind('Click', function(MouseEvent){
-                // audioController.playTrack("jump2,", 1, 0.3)
-                // if (Crafty.audio.isPlaying("bgAudio") == false) {
-                //     audioController.loadTrack("bgAudio", -1, 0.25);
-                // }
-                totalSeconds = 0;
                 numberOfResets = 0;
                 Crafty.scene('Game');
         });
+    var score = Crafty.e("Score")
+        .text("Number of Resets: " + numberOfResets)
+        .attr({x: 330, y: GAME_SCREEN_HEIGHT-300});
+    var time_taken = Crafty.e("Score")
+        .text("Time Elapsed: " + timer.gametime)
+        .attr({x: 330, y: GAME_SCREEN_HEIGHT-240});
 });
 
 Crafty.c("EndBackground", {
@@ -31,3 +32,18 @@ Crafty.c("EndBackground", {
         this.vx -= 1;
     }
 });
+
+Crafty.c("Score", {
+	init: function() {
+        this.requires('2D, DOM, Text')
+        this.attr({w: 200, h: 100, x: -60, y: -35})
+        this.z = 1000;
+        // HashSet of Messages Received to only notify once.
+        this.textAlign("center");
+        // this.css('text-shadow', '2px 2px 5px white')
+        this.textColor('#555');
+        this.unselectable();
+        this.alpha = 0.9;
+        this.textFont({ size: '20px', weight: "bold" });
+    }
+})

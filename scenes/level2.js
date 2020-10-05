@@ -10,7 +10,7 @@ Crafty.defineScene("Level2", function() {
         if (next_level_loading == false) {
             next_level_loading = true;
             setTimeout(function () {
-                Crafty.scene("Level3");
+                Crafty.scene("EndScreen");
             }, 500);
         }
     });

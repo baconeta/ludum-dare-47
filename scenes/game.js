@@ -1,6 +1,7 @@
 Crafty.defineScene("Game", function() {
 	// This Scene should be used to set up global variables, scoring, timing, gravity etc
-
+	timer = Crafty.e("Timer");
+	this.totalSeconds = 0;
 	Crafty.scene("Level1");
 
 	// var hay = Crafty.e("HayPiece");
