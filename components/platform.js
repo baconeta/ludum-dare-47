@@ -21,7 +21,7 @@ Crafty.c("Platform_Hitbox2", {
             x : 0,
             y : 0,
             w : 246,
-            h : 19,
+            h : 10,
             z :2,
             matter : {
                 friction : 0,
