@@ -11,7 +11,7 @@ Crafty.defineScene("Level1", function() {
     var level_details = {x:0,y:-200,w:4000,h:1000}
     var background = Crafty.e("Background").place(level_details.x,level_details.y,level_details.w,level_details.h);
     background.set_boundaries();
-    var next_level_door = Crafty.e("Door").place(1000,level_details.y+level_details.h-100, true); //Give the door a location (the parameters are set clean for the floor here)
+    var next_level_door = Crafty.e("Door").place(1000,level_details.y+level_details.h-100, true); //Give the door a location (the y parameters are set cleanly for the floor here)
     //var level_controller = Crafty.e("Level_Controller");
 
     // Object and obstacle placements //
