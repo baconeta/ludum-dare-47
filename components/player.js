@@ -55,5 +55,10 @@ Crafty.c("Player", {
 			get_key[0].obj.destroy();
 			this.has_key = true;
         });
+		this.onHit("Door", function(hit_door) {
+			if (hit_door[0].obj.isLocked == false) {
+				Crafty.trigger("NextLevel");
+			}
+		});
     }
 })

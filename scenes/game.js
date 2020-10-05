@@ -1,16 +1,17 @@
 Crafty.defineScene("Game", function() {
+	Crafty.Matter.init({
+		// debug : true,
+		gravity : {
+		  x : 0,
+		  y : 0.098
+		}
+	});
 
 	Crafty.scene("Level1");
-
-
-
-
 
 	// var hay = Crafty.e("HayPiece");
 	// hay.x = player.x + 50;
 	// hay.y = player.y;
-
-
 
     // Matter.Events.on(Crafty.Matter.engine, 'collisionStart', function (event) {
 	// 	 event.pairs.forEach((collision) => {
