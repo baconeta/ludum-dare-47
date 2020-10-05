@@ -21,6 +21,22 @@ Crafty.defineScene("Title", function() {
                 totalSeconds = 0;
                 Crafty.scene('Game');
         });
+
+
+    var title = Crafty.e("2D, DOM, title")
+        .attr({x: 200, y: 0});
+
+    var title = Crafty.e("CreditsText")
+        .text("Game Art by Veera Villgren")
+        .attr({x: 50, y: GAME_SCREEN_HEIGHT-37});
+
+    var title = Crafty.e("CreditsText")
+        .text("Game Dev by Steven Rutherford")
+        .attr({x: 350, y: GAME_SCREEN_HEIGHT-37});
+
+    var title = Crafty.e("CreditsText")
+        .text("Game Dev by Joshua Pearson")
+        .attr({x: 650, y: GAME_SCREEN_HEIGHT-37});
 });
 
 Crafty.c("StartBackground", {
