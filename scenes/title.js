@@ -4,7 +4,7 @@ Crafty.defineScene("Title", function() {
     gameStartBackground.bind('Click', function() {
         if (Crafty.audio.isPlaying("bgAudio") == false && audioController.muted == false) {
             console.log(audioController);
-            audioController.loadTrack("bgAudio", -1, 0.25);
+            audioController.playTrack("bgAudio", -1, 0.25);
         }
     })
     var playGameButton = Crafty.e("2D, DOM, Image, Mouse, play_button")
@@ -15,9 +15,8 @@ Crafty.defineScene("Title", function() {
             h: 51
         })
         .bind('Click', function(MouseEvent){
-                // audioController.playTrack("jump2,", 1, 0.3)
                 if (Crafty.audio.isPlaying("bgAudio") == false && audioController.muted == false) {
-                    audioController.loadTrack("bgAudio", -1, 0.25);
+                    audioController.playTrack("bgAudio", -1, 0.25);
                 }
                 totalSeconds = 0;
                 Crafty.scene('Game');
