@@ -1,4 +1,4 @@
-Crafty.c("BallController", {
+Crafty.c("Ball_Controller", {
     init: function() {
         this.addComponent("2D, DOM");
         this.bind("BallSmash", function (ball_pos) {
