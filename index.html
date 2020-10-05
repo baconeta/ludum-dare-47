@@ -1,6 +1,16 @@
 <html>
   <head>
   	<title>Ludum Dare #47</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163891247-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-163891247-3');
+    </script>
+
   </head>
   <body>
     <style>
@@ -17,7 +27,7 @@
         }
         #instructions {
             width: 95%;
-            height: 280px;
+            height: 240px;
             margin: 20px auto;
             padding: 5px;
             background-color: #EEE;
@@ -27,16 +37,16 @@
             box-shadow: 0px 0px 25px 25px rgba(0, 0, 0, .15);
         }
     </style>
-    <h2> Ludum Dare #47 </h2>
+    <h2> Ludum Dare #47: Stuck in a Loop </h2>
 
     <div id="wrapper">
         <div id="game"></div>
 
         <div id="instructions">
-            Help Hammy the Hamster escape his cage, on his way to be saved from being stuck in a loop within his wheel!
+            Guide Hammy the Hamster to escape his cage, on his way to be saved from being stuck in a loop within his wheel!
             <br>
             <br>
-            Don't get the Key stuck in hay!
+            Don't get the Key stuck in hay! Or you'll have to reset the level (space)
             <br>
             <br>
             If the controls dont work, please click down here in the instructions then back on the hamster in the game.
