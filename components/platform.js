@@ -56,7 +56,43 @@ Crafty.c("Platform_Ramp_Right_Hitbox", {
         this.attr({
             x : 0,
             y : 0,
-            w : 350,
+            w : 340,
+            h : 10,
+            z :2,
+            matter : {
+                friction : 0,
+                density : 0.5,
+                isStatic : true,
+                label : 'floor'
+            }
+        });
+    }
+})
+
+Crafty.c("Platform_Ramp_Left", {
+	init: function() {
+        this.addComponent("2D, DOM, platform_ramp_left");
+        this.hitbox = Crafty.e("Platform_Ramp_Left_Hitbox");
+        this.attach(this.hitbox);
+        this.hitbox.rotation = 17;
+		this.z = -10
+    },
+	place: function(x, y) {
+		this.x = x;
+        this.y = y;
+		this.hitbox.x = this.x;
+		this.hitbox.y = this.y + this.h - 77;
+        return this;
+	}
+})
+
+Crafty.c("Platform_Ramp_Left_Hitbox", {
+	init: function() {
+        this.addComponent("2D, DOM, Matter");
+        this.attr({
+            x : 0,
+            y : 0,
+            w : 340,
             h : 10,
             z :2,
             matter : {

@@ -1,4 +1,5 @@
 Crafty.c("Platform_Hitbox", {
+	// I believe obselete now
 	init: function() {
         this.addComponent("2D, DOM, Matter");
         this.attr({
