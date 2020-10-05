@@ -2,7 +2,7 @@ Crafty.defineScene("Title", function() {
 // To have a background, play button, set-up functionality, music/mute once implemented
     var gameStartBackground = Crafty.e("StartBackground");
     gameStartBackground.bind('Click', function() {
-        if (Crafty.audio.isPlaying("bgAudio") == false) {
+        if (Crafty.audio.isPlaying("bgAudio") == false && BGmuted == false) {
             console.log(audioController);
             audioController.loadTrack("bgAudio", -1, 0.25);
         }
@@ -16,7 +16,7 @@ Crafty.defineScene("Title", function() {
         })
         .bind('Click', function(MouseEvent){
                 // audioController.playTrack("jump2,", 1, 0.3)
-                if (Crafty.audio.isPlaying("bgAudio") == false) {
+                if (Crafty.audio.isPlaying("bgAudio") == false && BGmuted == false) {
                     audioController.loadTrack("bgAudio", -1, 0.25);
                 }
                 totalSeconds = 0;
