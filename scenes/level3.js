@@ -14,7 +14,6 @@ Crafty.defineScene("Level3", function() {
             }, 500);
         }
     });
-    //var level_controller = Crafty.e("Level_Controller");
 
     // Object and obstacle placements //
     var platform = Crafty.e("Platform").place(400,1200);

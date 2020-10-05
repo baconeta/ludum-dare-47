@@ -14,7 +14,6 @@ Crafty.defineScene("Level1", function() {
             }, 500);
         }
     });
-    //var level_controller = Crafty.e("Level_Controller");
 
     // Object and obstacle placements //
 
@@ -28,8 +27,5 @@ Crafty.defineScene("Level1", function() {
     makeCameraTrackEntity(player, 75);
 
     // Ball and Key Code //
-	// var ball = Crafty.e("Ball");
-    // var ball_controller = Crafty.e("Ball_Controller");
-	// ball.x = 550;
-	// ball.y = 240;
+
 })
