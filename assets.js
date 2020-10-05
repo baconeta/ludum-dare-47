@@ -107,5 +107,10 @@ var gameAssets = {
            "tileh": 127,
            "map": {"play_again_button": [0, 0]}
        },
+       "assets/images/grate_platform.png": {
+           "tile" : 1072,
+           "tileh": 115,
+           "map": {"ladder": [0, 0]}
+       },
    }
 }
