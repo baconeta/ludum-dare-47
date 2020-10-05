@@ -20,13 +20,11 @@ Crafty.defineScene("Level1", function() {
 
     // Hamster and Wheel Code //
     var hamster = Crafty.e("HamsterWrapper");
-    hamster.x = 300;
-    hamster.y = 100;
     var player = Crafty.e("Player");
 	var wheel = Crafty.e("Wheel");
     player.attach(wheel);
-	player.x = hamster.x;
-	player.y = hamster.y;
+	player.x = 300;
+	player.y = 700;
     makeCameraTrackEntity(player, 75);
 
     // Ball and Key Code //
