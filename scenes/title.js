@@ -6,8 +6,13 @@ Crafty.defineScene("Title", function() {
     //         audioController.loadTrack("bgAudio", -1, 0.25);
     //     }
     // })
-    var playGameButton = Crafty.e("2D, DOM, Image, Mouse, Color, playbutton")
-        .attr({x: GAME_SCREEN_WIDTH/2-75, y: GAME_SCREEN_HEIGHT/2+25})
+    var playGameButton = Crafty.e("2D, DOM, Image, Mouse, play_button")
+        .attr({
+            x: GAME_SCREEN_WIDTH/2-80,
+            y: GAME_SCREEN_HEIGHT/2+25,
+            w: 141,
+            h: 51
+        })
         .bind('Click', function(MouseEvent){
                 // audioController.playTrack("jump2,", 1, 0.3)
                 // if (Crafty.audio.isPlaying("bgAudio") == false) {
@@ -15,9 +20,6 @@ Crafty.defineScene("Title", function() {
                 // }
                 Crafty.scene('Game');
         });
-    playGameButton.w = 140;
-    playGameButton.h = 50;
-    playGameButton.color('red');
 });
 
 Crafty.c("StartBackground", {

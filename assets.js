@@ -105,5 +105,10 @@ var gameAssets = {
            "tileh": 1500,
            "map": {"title_screen": [0, 0]}
        },
+       "assets/images/play_button.png": {
+           "tile" : 352,
+           "tileh": 127,
+           "map": {"play_button": [0, 0]}
+       },
    }
 }
