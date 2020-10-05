@@ -7,7 +7,7 @@ Crafty.c("Ball", {
             w: 50,
             h: 50,
             matter: {
-                density: 2,
+                density: 0.0005,
                 shape : "circle",
                 label: "ball"
             }

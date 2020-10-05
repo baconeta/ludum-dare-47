@@ -110,7 +110,7 @@ var gameAssets = {
            "tileh": 125,
            "map": {"key": [0, 0]}
        },
-       "assets/images/title_screen_draft.png": {
+       "assets/images/title_screen.png": {
            "tile" : 2250,
            "tileh": 1500,
            "map": {"title_screen": [0, 0]}
@@ -119,6 +119,16 @@ var gameAssets = {
            "tile" : 352,
            "tileh": 127,
            "map": {"play_button": [0, 0]}
+       },
+       "assets/images/end_screen.png": {
+           "tile" : 2250,
+           "tileh": 1500,
+           "map": {"end_screen": [0, 0]}
+       },
+       "assets/images/play_again_button.png": {
+           "tile" : 352,
+           "tileh": 127,
+           "map": {"play_again_button": [0, 0]}
        },
    }
 }
