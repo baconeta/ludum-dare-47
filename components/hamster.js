@@ -22,7 +22,7 @@ Crafty.c("HamsterWrapper", {
             speed = speed >  15 ?  15 : speed;
             speed = speed < -15 ? -15 : speed;
             this.rotation = -3 * speed;
-            //iuf hamster speed is 0 pause animation
+            //if hamster speed is 0 pause animation
         })
     }
 })
