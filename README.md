@@ -1,7 +1,8 @@
 # Hammy the Hamster
 ### _Stuck in a loop: can you escape the cage while stuck in a loop?_
 
-
+![38448](https://user-images.githubusercontent.com/36744690/162605167-424a8131-a8c6-4221-af62-fdac75f52c3c.png)
+![37038](https://user-images.githubusercontent.com/36744690/162605174-8ff22d57-7f8e-406c-9e9b-832ad3dfa37e.png)
 
 Hammy the Hamster is a game produced for Ludum Dare #47 in 72 hours with a team of three under the theme "Stuck in a loop".
 
